@@ -1,0 +1,114 @@
+@import '@/qunar/reset.scss';
+
+.shoucangheader{
+  @include rect(100%, 0.45rem);
+  background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+  @include position(relative);
+  @include margin-bottom(0.1rem);
+  .icon-icon{
+    @include position(absolute);
+    left:.2rem;
+    top:0.05rem;
+    @include color(#000);
+    @include font-size(.25rem);
+    }
+    h2{
+      @include white-space(nowrap);
+      @include color(#fff);
+      @include font-size(.16rem);
+      @include font-weight(normal);
+      @include margin(0 auto);
+      @include text-align();
+      @include letter-spacing( .03rem);
+      @include rect(2.2rem,auto);
+      @include overflow(hidden);
+      @include white-space(nowrap);
+      @include text-overflow(ellipsis);
+      @include margin-top(0.1rem);
+    }
+    .icon-weibiaoti-- {
+      @include position(absolute);
+      right:.5rem;
+      top:0.04rem;
+      @include font-size(.22rem);
+      @include color(#fff);
+      @include font-weight(700);
+    }
+    .icon-zhuanfa{
+      @include position(absolute);
+      right:.15rem;
+      top:0.05rem;
+      @include font-size(.2rem);
+      @include color(#000);
+      @include font-weight(700);
+    }
+}
+.content {
+  .xiaoxiong {
+    text-align: center;
+    @include rect(40%, 20%);
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+  }
+  p.sc {
+    text-align: center;
+    color: #ccc;
+    line-height: .8rem;
+  }
+  .shopp {
+    display: block;
+    color: #f99;
+    border: .01rem solid #ccc;
+    @include rect(2rem, .4rem);
+    margin-left: .8rem;
+    text-align: center;
+    border-radius: .1rem;
+    line-height: .4rem;
+    
+  }
+  .movielist {
+    @include rect(100%,100%);
+    @include flexbox();
+    @include flex-wrap(wrap); //自动换行
+    .movieimg{
+      @include rect(auto, auto);
+      @include margin-left(0.18rem);
+      @include margin-bottom(0.22rem);
+      img{
+        @include rect(1.6rem,auto);
+      }
+      p{
+        @include rect(1.6rem,auto);
+        @include overflow(hidden);
+        @include white-space(nowrap);
+        @include text-overflow(ellipsis);
+        @include color(#4d4141cc);
+        @include margin-top(0.1rem);
+      }
+    }
+  }
+}
+
+      // .content {
+      //   text-align: center;
+      //   .xiaoxiong {
+      //     @include rect(40%, 20%);
+      //     margin-top: 1rem;
+      //   }
+      //   p.sc {
+      //     color: #ccc;
+      //     line-height: .8rem;
+      //   }
+      //   .shopp {
+      //     display: block;
+      //     color: #f99;
+      //     border: .01rem solid #ccc;
+      //     @include rect(2rem, .4rem);
+      //     margin-left: .8rem;
+      //     text-align: center;
+      //     border-radius: .1rem;
+      //     line-height: .4rem;
+          
+      //   }
+      // }
+      

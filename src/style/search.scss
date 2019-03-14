@@ -1,0 +1,45 @@
+@import '@/qunar/reset.scss';
+.sheader{
+  @include rect(100%,0.5rem);
+  // border-bottom: 0.01rem solid#ECECF0;
+  @include position(fixed);
+  left:0;
+  top:0;
+  @include background-color(#fff);
+  @include margin-bottom(0.1rem);
+  overflow: auto;
+  overflow: auto;
+  .srect{
+    @include float(right);
+    @include rect(83%,0.3rem);
+    @include border-radius(0.3rem);
+    @include background-color(#F3F3F6);
+    @include margin-right(0.15rem);
+    @include margin-top(0.1rem);
+    @include position(relative);
+    input{
+      border:none;
+      @include border-radius(0);
+      @include background-color(#F3F3F6);
+      @include float(left);
+      @include margin-left(0.15rem);
+      @include margin-top(0.05rem);
+    }
+    .icon-search{
+      @include float(left);
+      @include rect(0.2rem,0.3rem);
+      @include display(block);
+      background: url(//js.ibaotu.com/mobile/img/icons/public/search_btn.png) no-repeat;
+      @include background-size(0.18rem);
+      @include margin-top(0.05rem);
+      @include margin-left(0.1rem);
+    }
+    .icon-icon{
+      @include position(absolute);
+      left:-0.36rem;
+      top:-0.02rem;
+      @include font-size(0.23rem);
+      @include color(#bbb);
+    }
+  }
+}

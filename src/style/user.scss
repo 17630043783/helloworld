@@ -1,0 +1,190 @@
+@import "@/qunar/reset.scss";
+
+html, body, #root, .box {
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+}
+.header-flex {
+  @include rect(100%, 0.4rem);
+   background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+  @include color(#fff);
+  .backe {
+    @include color(#fff);
+    @include rect(.4rem, 100%);
+    font-size: .16rem;
+    float: left;
+    line-height: .44rem;
+    margin-left: .2rem;
+    img {
+      height: .2rem;
+    }
+  }
+  h3 {
+    font: 0.16rem/0.44rem  "";
+    font-size: .16rem;
+    letter-spacing: .01rem;
+    margin-left:1.2rem;
+    font-weight: 500;
+  }
+}
+
+.content {
+  @include overflow();
+  .user-t {
+    margin-left: .1rem;
+    margin-top: .6rem;
+    @include rect(100%, .9rem);
+    @include flexbox();
+    .user-t-l {
+      @include rect(.65rem, .65rem);
+      img {
+     @include rect(.75rem,.75rem);
+     border-radius: 0.4rem;
+      }
+    }
+    .user-t-r {
+      .user-t-r-t {
+        color: #666666;
+      font-size: .15rem;
+      @include flexbox();
+      margin-left: .2rem;
+      margin-top: .1rem;
+      @include margin-bottom(0.2rem);
+      span {
+        font-size: .1rem;
+        line-height: .2rem;
+      }
+      p {
+        margin-left: .1rem;
+      }
+      }
+      .user-t-r-b {
+        @include flexbox();
+        margin-top: -.1rem;
+        margin-left: .2rem;
+        img {
+          @include rect(.2rem, .2rem);
+          margin-right: .1rem;
+        }
+      } 
+    }
+  }
+  .banners {
+    // background: url('http://js.ibaotu.com/mobile/img/activity/190104/img_ad_ima2.gif') center no-repeat;
+    @include rect(100%, .85rem);
+    // background-size: cover;
+    @include background-color(#f7f7f7);
+  }
+  .center-t {
+    margin-top: .1rem;
+    li {
+      @include rect(100%, .46rem);
+      padding-top: .1rem;
+      @include flexbox();
+
+      .image {
+        @include rect(.16rem, .16rem);
+      }
+      img {
+        @include rect(.2rem, .2rem);
+        margin-right: .2rem;
+        // margin-top: .1rem;
+        margin-left: .1rem;
+      }
+      .lis {
+        @include flexbox();
+        justify-content: space-between;
+        @include rect(100%, .3rem);
+        border-bottom: .01rem solid #ECECF0;
+        p{
+          font: .14rem/ .2rem "";
+          color: #666666;
+        }
+        img {
+          @include rect(.1rem, .14rem);
+          // margin-top: .1rem;
+        }
+      }
+      .last {
+        @include flexbox();
+        @include rect(100%, .3rem);
+        color: #666666;
+         p {
+          float: left;
+          font-size: .14rem;
+          width:1.2rem;
+          // margin-right: .1rem;
+         }
+         span.lasts {
+           float: left;
+           color: #FF8A00;
+           width: 1.7rem;
+           font-size: .1rem;
+           line-height: .2rem;
+           margin-bottom: .1rem;
+         }
+         img {
+           @include rect(.1rem, .14rem);
+         }
+      }
+    }
+  }
+
+  .center-b {
+    margin-top: .1rem;
+    li {
+      @include rect(100%, .46rem);
+      padding-top: .1rem;
+      @include flexbox();
+      .image {
+        @include rect(.16rem, .16rem);
+      }
+      img {
+        @include rect(.2rem, .2rem);
+        margin-right: .2rem;
+        // margin-top: .1rem;
+        margin-left: .1rem;
+      }
+      .lis {
+        @include flexbox();
+        justify-content: space-between;
+        @include rect(100%, .3rem);
+        border-bottom: .01rem solid #ECECF0;
+        p{
+          font: .14rem/ .2rem "";
+          color: #666666;
+        }
+        a{
+          @include color(#666666);
+        }
+        img {
+          @include rect(.1rem, .14rem);
+          // margin-top: .1rem;
+        }
+        .rights {
+           @include flexbox();
+           p {
+             margin-right: .2rem;
+           }
+        }
+      }
+      .last {
+        @include flexbox();
+        @include rect(100%, .3rem);
+        color: #666666;
+         p {
+          float: left;
+          font-size: .14rem;
+         }
+         
+       }
+    }
+  }
+  .nologin {
+    @include rect(100%, .46rem);
+    text-align: center;
+    font-size: .14rem;
+    line-height: .46rem;
+    color: #666;
+  }
+}

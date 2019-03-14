@@ -1,0 +1,27 @@
+@import '@/qunar/reset.scss';
+
+.movelist {
+  @include rect(100%,auto);
+  @include flexbox();
+  @include flex-wrap(wrap); 
+  @include overflow();  
+  margin-top: .9rem;
+  //自动换行
+  .movieimg{
+    @include rect(auto, auto);
+    @include margin-left(0.18rem);
+    @include margin-bottom(0.22rem);
+    // @include overflow();
+    img{
+      @include rect(1.6rem,auto);
+    }
+    p{
+      @include rect(1.6rem,auto);
+      @include overflow(hidden);
+      @include white-space(nowrap);
+      @include text-overflow(ellipsis);
+      @include color(#4d4141cc);
+      @include margin-top(0.1rem);
+    }
+  }
+    }

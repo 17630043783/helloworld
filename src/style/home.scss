@@ -1,0 +1,112 @@
+@import '@/qunar/reset.scss';
+
+.home-header{
+  @include rect(100%,1rem);
+  @include z-index(100);
+   padding: 0.15rem 0.22rem 0rem ;
+  position:fixed;
+  left:0;
+  top:0;
+  .icon-logo{
+  background: url(//js.ibaotu.com/mobile/img/icons/home/logo.png) no-repeat;
+  @include rect(0.88rem,0.24rem);
+  @include background-size(cover);
+  @include float(left);
+  }
+  .home-search-wrap{
+    @include rect(2rem,0.3rem);
+    @include margin-left(1rem);
+    @include font-size(0.28rem);
+    @include background-color(#fff);
+    @include border-radius(0.3rem);
+    .home-search{
+      @include float(left);
+      position: relative;
+      .icon-sousuo{
+        @include margin-left(0.1rem);
+        position: absolute;
+        left: 0rem;
+        top: 0.05rem;
+        @include color(#ccc);
+      }
+    }
+    .home-search-inp{
+      @include rect(1rem,auto);
+      // @include line-height(0.6rem);
+      @include font-size(.14rem);
+      @include margin-left(0.2rem);
+      @include margin-top(0.05rem);
+      float: left;
+      vertical-align: middle;
+      border:none;
+      @include text-indent(0.15rem)
+    }
+  }
+  .user-feedback{
+    @include float(right);
+    @include rect(0.5rem,0.5rem);
+    @include margin-top(-0.28rem);
+    @include margin-right(-0.31rem);
+    .fankui{
+      img{
+        @include rect(auto,0.25rem);
+      }
+    }
+  }
+}
+.bottomUl {
+  @include rect(100%,10%);
+  @include flexbox();
+  @include justify-content();
+  @include border(0.02rem 0px 0px 0px,#ddd , solid);
+  @include margin-bottom(0.45rem);
+
+    li{
+      // 1px边框实现
+      @include background-color(#fff);
+      @include justify-content();
+      @include flex();
+      //实现li内容元素的水平居中
+      //内容水平居中    justify-content:cennter;
+      // @include margin-top(0.15rem);
+      @include text-align(center);
+      @include rect(100%,1.2rem);
+      span{
+        @include rect(0.7rem,auto);
+        @include margin-top(0.1rem);
+        img{
+          @include rect(0.5rem,auto);
+          @include margin-top(0.2rem);
+          @include margin-bottom(0.1rem);
+        }
+      }
+    }
+    .hot2{
+      @include position(relative);
+      .icon-hot2{
+        position: absolute;
+        top: 0.3rem;
+        right: 0.1rem;
+        @include rect(.3rem,.22rem);
+        background: url(//js.ibaotu.com/mobile/img/icons/home/icon_hot2.png) no-repeat;
+        @include background-size(100% auto);
+      }
+      a{
+        @include color(#8D8D96);
+      }
+    }
+    .mad2{
+      @include position(relative);
+      .icon-mad2{
+        position: absolute;
+        top: .24rem;
+        right: .08rem;
+        @include rect(0.32rem,.22rem);
+        background: url(//js.ibaotu.com/mobile/img/icons/home/icon_mad2.png) no-repeat;
+        @include background-size(100% auto);
+      }
+    }
+    a{
+      @include color(#8D8D96);
+    }
+}

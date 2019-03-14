@@ -1,0 +1,51 @@
+@import '@/qunar/reset.scss';
+.home-cot{
+  @include background-color(#fff);
+  .moudle-tit{
+    @include rect(100%,0.38rem);
+    @include line-height(0.32rem);
+    @include position(relative);
+    @include padding(0rem 0.18rem 0.12rem);
+    h3{
+      @include font-size(0.2rem);
+      @include color(#292A41);
+    }
+    a{
+      @include color(#888);
+      @include position(absolute);
+      top: 0rem;
+      right: 0.14rem;
+    }
+  }
+  .movielist {
+    @include rect(100%,100%);
+    @include flexbox();
+    @include flex-wrap(wrap); //自动换行
+    .movieimg{
+      @include rect(auto, auto);
+      @include margin-left(0.18rem);
+      @include margin-bottom(0.22rem);
+      img{
+        @include rect(1.6rem,auto);
+      }
+      p{
+        @include rect(1.6rem,auto);
+        @include overflow(hidden);
+        @include white-space(nowrap);
+        @include text-overflow(ellipsis);
+        @include color(#4d4141cc);
+        @include margin-top(0.1rem);
+      }
+    }
+      }
+    }
+.float-right-up{
+  @include rect(0.8rem,0.8rem);
+  @include display(block);
+  @include position(fixed);
+  right: 0.1rem;
+  bottom:0.8rem;
+  background: url(//js.ibaotu.com/mobile/img/activity/190104/img_float_right2.gif) no-repeat;
+  @include background-size(cover);
+  z-index:10;
+}

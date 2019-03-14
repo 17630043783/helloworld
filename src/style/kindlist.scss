@@ -1,0 +1,26 @@
+@import '@/qunar/reset.scss';
+
+.kindd {
+  @include flexbox();
+  @include rect(100%,100%);
+  @include flex-flow(wrap); 
+  @include overflow();      
+  a {
+    display:block;
+    @include margin(0 0 0.2rem 0);       
+    @include rect(50%,auto);          
+    img {
+      @include rect(1.3rem,1.95rem);  
+    }
+    p {
+      @include color(#60606c);
+      @include font-size(0.14rem);
+      @include line-height(0.4rem);
+      @include text-align();
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      width:1.2rem;
+    }
+  }
+}

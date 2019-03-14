@@ -1,0 +1,103 @@
+@import '@/qunar/reset.scss';
+
+.box1 {
+  @include flexbox();
+  @include flex-direction(column);
+  .header1 {
+    @include rect(100%,0.6rem);
+    @include background-color(#fff);
+    @include border(0 0 .03rem 0,#F3F3F6,solid);
+    //  padding: 0.15rem 0.22rem 0rem ;
+    // position:fixed;
+    // left:0;
+    // top:0;
+    .backe {
+      @include color(#fff);
+      @include rect(.4rem, 100%);
+      font-size: .16rem;
+      float: left;
+      line-height: .44rem;
+      @include margin(0.05rem 0 0 0.2rem);
+      img {
+        height: .2rem;
+      }
+    }
+    .btn-wrap {
+      @include rect(3.2rem,0.35rem);
+      @include background-color(#F3F3F6);
+      @include margin(0.1rem 0 0 0.42rem);
+      border-radius: 0.2rem;
+      .icon-sousuo {
+        @include color(#DCDCE3);
+        position:relative;
+        top:0.03rem;
+      }
+      .search {
+        border:0;
+        @include margin(0.06rem 0 0 0.1rem);
+        width:2.5rem;
+        @include background-color(#F3F3F6);
+      }
+    }
+    
+  }
+  .content1 {
+    @include flexbox();
+    @include rect(100%,7.1rem);
+    // @include flex();
+    .sorts-wrap {
+      position:relative;
+      left:0;
+      @include overflow();
+      @include rect(0.8rem,100%);
+      @include background-color(#f8f8fa);
+      a{
+        @include rect(100%,0.7rem);
+        @include font-size(0.16rem);
+        @include text-align();
+        @include line-height(0.7rem);
+        p {
+          @include color(#60606c);
+          &.active {
+            @include color(#ff9100);
+          }
+        }
+      }
+      a.te{
+        @include color(#ff9100);
+        @include position(relative);
+        p {
+            @include color(#ff9100);
+        }
+      }
+      a.te::before{
+        @include position(absolute);
+        left:0;
+        top:0.66rem;
+        bottom:0;
+        content: "";
+        @include margin(auto);
+        @include rect(0.04rem,0.2rem);
+        @include background-color(#ff9100);
+      }
+    }
+    .ggo {
+      @include rect(auto,auto);
+      @include flex();
+      @include padding(0.08rem 0.08rem);
+      @include background-color(#fff);
+      @include overflow();
+      .banner {
+        display:block;
+        @include rect(100%,0.6rem);
+        background:url(https://js.ibaotu.com/mobile/img/activity/190104/img_ad_ima2.gif)center no-repeat;
+        background-size:100% 100%;
+      }
+      .picturelist {
+        @include padding(0.1rem 0 0 0);
+        @include overflow();
+        @include rect(100%,100%);
+      }
+    } 
+  }
+}

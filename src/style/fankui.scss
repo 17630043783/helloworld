@@ -1,0 +1,59 @@
+@import '@/qunar/reset.scss';
+
+.header{
+  @include position(relative);
+  .icon-icon{
+    @include position(absolute);
+    left:.2rem;
+    top:0.05rem;
+    @include color(#fff);
+    @include font-size(.3rem);
+  }
+  h2{
+    @include rect(50%,100%);
+    @include white-space(nowrap);
+    @include color(#fff);
+    @include font-size(.16rem);
+    @include font-weight();
+    @include margin(0 auto);
+    @include text-align();
+    @include padding-top(0.15rem);
+    @include letter-spacing( .03rem);
+  }
+}
+
+.user-feedback1{
+  @include rect(100%,auto);
+  @include padding(.2rem .2rem 0);
+  #area{
+    @include rect(100%,2rem);
+    @include box-sizing(border-box);
+    border:1px solid #999999;
+    @include color(#999999);
+    @include border-radius(0.05rem);
+    @include padding(0.24rem);
+  }
+  .word-nums{
+    @include color(#999999);
+    @include text-align(right);
+  }
+  .online-kf{
+    @include color(#666666);
+    .zixun{
+      @include color(#f38e2e);
+      border-bottom: 1px solid #f38e2e;
+    }
+  }
+  .submit-button{
+    @include background-color(#fdb222);
+    @include rect(95%,.48rem);
+    @include font-size(.16rem);
+    @include letter-spacing(0.01rem);
+    @include border-radius(0.1rem);
+    @include color(#fff);
+    // @include margin(0 auto);
+    @include text-align();
+    @include padding-top(0.12rem);
+    @include margin(3rem auto 0);
+  }
+}

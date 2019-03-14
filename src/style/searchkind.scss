@@ -1,0 +1,61 @@
+@import '@/qunar/reset.scss';
+
+.skind{
+  @include position(fixed);
+  left:0;
+  top:0.49rem;
+  @include rect(100%,0.4rem);
+  @include background-color(#fff);
+  border-bottom: 1px solid #ECECF0;
+  border-top: 1px solid #ECECF0;
+  @include line-height(0.4rem);
+  @include flexbox();
+.kind1{
+  @include flex();
+  @include float(left);
+  @include rect(auto,100%);
+  @include justify-content();
+  @include align-items();
+  @include flex-direction(column);
+  @include text-align(center);
+  @include vertical-align(middle);
+  .kindtop{
+  }
+  .kinddiv.active{
+    display: block;
+  }
+  .kinddiv{
+    @include position(absolute);
+    left:0;
+    top:0.3rem;
+    @include display(none);
+    @include rect(100%,2688%);
+    @include background-color(#dcdcdc);
+    background: rgba(53,53,59,0.5);
+    .kindul{
+      @include rect(100%,auto);
+      overflow: hidden;
+      @include background-color(#fff);
+      @include padding-top(0.2rem);
+      li{
+        @include float(left);
+        @include rect(1rem,auto);
+        @include margin-left(0.15rem);
+        @include margin-bottom(0.2rem);
+        @include background-color(#eee);
+        
+        a{
+          @include color(#000);
+          @include display(block);
+          @include rect(100%,100%);
+        }
+      a.active{
+          @include background-color(#f07d17);
+        }
+        
+      }
+    }
+  }
+}
+
+}

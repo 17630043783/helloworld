@@ -1,0 +1,26 @@
+@import '@/qunar/reset.scss';
+
+.spage{
+  h2{
+    @include rect(100%,0.15rem);
+    @include font-size(0.15rem);
+    @include font-weight(normal);
+    @include color(#8D8D96);
+    @include margin-top(0.5rem);
+    @include margin-left(0.1rem);
+  }
+  .slist{
+    @include rect(100%,auto);
+    @include margin-left(0.1rem);
+    a{
+      @include float(left);
+      @include rect(auto,.32rem);
+      @include color(#333443);
+      border: .01rem solid #C8C8D0;
+      @include margin-right(0.1rem);
+      @include padding(0.05rem);
+      @include margin-top(0.2rem);
+    }
+  }
+}
+

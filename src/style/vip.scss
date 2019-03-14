@@ -1,0 +1,178 @@
+@import '@/qunar/reset.scss';
+html, body, #root, .box {
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+}
+
+.header-flex {
+  @include rect(100%, 0.44rem);
+  background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+  position: fixed;
+  top:0;
+  z-index: 99;
+  @include color(#fff);
+  .backe {
+    @include color(#fff);
+    @include rect(.4rem, 100%);
+    font-size: .16rem;
+    float: left;
+    line-height: .44rem;
+    margin-left: .2rem;
+    img {
+      height: .2rem;
+    }
+  }
+  h2 {
+    font: 0.16rem/0.44rem  "";
+    font-size: .16rem;
+    letter-spacing: .02rem;
+    margin-left:1.5rem;
+    font-weight: 500;
+  }
+  
+}
+.content {
+  @include rect(100%, 100%);
+  @include overflow();
+  .banner {
+    width: 100%;
+    height: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    background: url(//js.ibaotu.com/mobile/img/icons/user/vip-banner.png) center no-repeat;
+    background-size: cover;
+    padding-top: .55rem;
+    letter-spacing: .01rem;
+    p {
+        display: block;
+        font-size: .2rem;
+        letter-spacing: .01rem;
+        margin-top: .2rem;
+    }
+  }
+  .rec-content {
+    width: 100%;
+    height: auto;
+    padding: .1rem;
+    ul {
+      width: 100%;
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+      background-color: #ffffff;
+      .li-active{
+        width: 1.7rem;
+        height: .6rem;
+        background-color: #ffffff;
+        border-radius: .1rem;
+        border: .01rem solid #DBDBE2;
+        margin-bottom: .14rem;
+        text-align: left;
+        color: #333443;
+        letter-spacing: .01rem;
+        i {
+          display: block;
+          float: left;
+          width: .34rem;
+          height: .34rem;
+          margin-bottom: .4rem;
+          margin-left: .2rem;
+          margin-top:.1rem;
+          img {
+            @include rect(100%, 100%);
+          }
+        }
+        span {
+         font-size: .14rem;
+         line-height: .6rem;
+         margin-left: .1rem;
+         color: #333443;
+        }
+      }
+    }
+  }
+  .li-active-a{
+    width: 1.7rem;
+    height: .6rem;
+    background-color: #FFF9F3;
+    border-radius: .1rem;
+    border: .01rem solid #DBDBE2;
+    margin-bottom: .14rem;
+    text-align: left;
+    color: #ff9100;
+    letter-spacing: .01rem;
+    border-color:#ff9100;
+  @include position(relative);
+    i {
+      display: block;
+      float: left;
+      width: .34rem;
+      height: .34rem;
+      margin-bottom: .4rem;
+      margin-left: .2rem;
+      margin-top:.1rem;
+      img {
+        @include rect(100%, 100%);
+      }
+    }
+    span {
+     font-size: .14rem;
+     line-height: .6rem;
+     margin-left: .1rem;
+     color: #333443;
+    }
+  }
+  .li-active-a::after{
+    @include display(block);
+    content:"";
+    @include rect(.4rem,.4rem);
+    background: url(//js.ibaotu.com//mobile/img/icons/user/search-jiao.png)center no-repeat;
+    @include background-size(cover);
+    @include position(absolute);
+    bottom:-.01rem;
+    right: 0;
+  }
+  h3 {
+    letter-spacing: .01rem;
+    font-size: .16rem;
+    font-weight: 500;
+    color: #333443;
+    padding-left: .1rem;
+  }
+  .shiliang {
+    @include rect(100%, auto);
+    padding: .2rem .12rem;
+    @include flexbox(); 
+      flex-wrap: wrap;
+      justify-content: space-between;
+    li {
+      width: .72rem;
+      height: auto; 
+      margin-bottom: .2rem;
+    img {
+      display: block;
+      width: .5rem;
+      height: .5rem;
+      margin-bottom: .1rem;
+      }
+    span {
+      text-align: center;
+      color: #8d8d96; 
+      margin-top: .2rem;
+      }
+    }
+  }
+}
+#vipbottom {
+  @include rect(100%,.5rem);
+  @include text-align(center);
+  @include line-height(0.5rem);
+  @include letter-spacing(.02rem);
+  @include color(#fff);
+  @include font-size(0.18rem);
+  @include background-color(#ff9100);
+  @include position(fixed);
+  left:0px;
+  bottom: 0px;
+}

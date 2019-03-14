@@ -1,0 +1,117 @@
+@import '@/qunar/reset.scss';
+
+.loginheader{
+  @include rect(100%, 0.45rem);
+  background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+  @include position(relative);
+  @include margin-bottom(0.1rem);
+  @include position(relative);
+  .icon-icon{
+    @include position(absolute);
+    left:.2rem;
+    top:0.05rem;
+    @include color(#000);
+    @include font-size(.25rem);
+    }
+    h2{
+      @include white-space(nowrap);
+      @include color(#fff);
+      @include font-size(.16rem);
+      @include font-weight(normal);
+      @include margin(0 auto);
+      @include text-align();
+      @include letter-spacing( .03rem);
+      @include rect(2.2rem,auto);
+      @include overflow(hidden);
+      @include white-space(nowrap);
+      @include text-overflow(ellipsis);
+      @include margin-top(.1rem);
+    }
+    .goregister{
+       @include position(absolute);
+       right:0.18rem;
+       top:0.1rem;
+       @include color(#fff);
+       @include font-weight(normal);
+       @include font-size(0.18rem);
+    }
+    .icon-weibiaoti-- {
+      @include position(absolute);
+      right:.5rem;
+      top:0.04rem;
+      @include font-size(.22rem);
+      @include color(#fff);
+      @include font-weight(700);
+    }
+    .icon-zhuanfa{
+      @include position(absolute);
+      right:.15rem;
+      top:0.05rem;
+      @include font-size(.2rem);
+      @include color(#000);
+      @include font-weight(700);
+    }
+}
+.content{
+  .user{
+    @include rect(3.4rem, auto);
+    border: 1px solid #e7e7e7;
+    @include margin(0.2rem auto);
+  }
+  .pass{
+    @include rect(3.4rem, auto);
+    border: 1px solid #e7e7e7;
+    @include margin(0 auto);
+    @include margin-bottom(0.5rem);
+  }
+  .pass1{
+    @include rect(3.4rem, auto);
+    border: 1px solid #e7e7e7;
+    @include margin(0 auto);
+    @include margin-bottom(0.5rem);
+    @include margin-top(-0.3rem);
+  }
+  .but{
+    @include background-color(#bbb);
+    @include border-radius(0.25rem);
+    @include margin(0 0.2rem);
+  }
+  .qq{
+    @include rect(3.2rem,0.2rem);
+    @include margin(0.3rem auto);
+    border-bottom: 1px solid #ccc;
+    @include position(relative);
+    h6{
+      @include position(absolute);
+      left:1.2rem;
+      top:.06rem;
+      @include background-color(#fff);
+      @include rect(0.9rem,0.3rem);
+      @include margin(0 auto);
+      @include text-align(center);
+      @include font-size(0.16rem);
+      @include font-weight(normal);
+    }
+  }
+  .shuoming{
+    .qqlogo{
+      @include display(block);
+      @include rect(.55rem,.55rem);
+      background: #13B7F6 url(//js.ibaotu.com/mobile/img/icons/login/img-qq-icon2.png)center no-repeat;
+      background-size: 50%;
+      border-radius: 100%;
+      margin: .4rem 1.5rem; 
+    }
+    p {
+      text-align: center;
+      font-size: .12rem;
+    }
+    s {
+      margin-top:.3rem;
+      display: block;
+      font-size: .12rem;
+      text-align: center;
+      color: #CFCFD6;
+    }
+  }
+}

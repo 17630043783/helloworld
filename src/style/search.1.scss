@@ -1,0 +1,206 @@
+.pros-list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;}
+  .pros-list > li {
+    height: 100%;
+    width: 50%;
+    margin-bottom: 0.75rem;
+    padding: .5rem; 
+    padding-top: .8rem;}
+  .pros-list > li > a img {
+      width: 100%;
+      height: 80%; }
+  .pros-list > li .infos {
+      width: 100%;
+      height: 20%;
+      text-align: center;
+      color: rgb(36, 35, 35);
+      font-size: .76rem;}
+    .pros-list > li .datas {
+      margin-top: 2.03rem; }
+      .pros-list > li .datas .icon-see {
+        float: left; }
+       .pros-list > li .datas > div > span {
+        margin-left: 0.78rem; }
+
+/* 专题头部 */
+.header {
+  position: relative;
+  width: 100%;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  text-align: center;
+  background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+}
+
+/*头部icon共用样式  返回和搜索图标......................*/
+.header .pb-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: .2rem;
+}
+/*搜索图标的大小控制...................................*/
+.pb-icon {
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*灰色返回图标................................*/
+.header .icon-back-h {
+  width: 0.625rem;
+  height: 1.125rem;
+  background-image: url( //js.ibaotu.com/mobile/img/icons/main/icon_back_hui.png);
+}
+/* 带搜索的头部......................... */
+.header.search {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 3.156rem;
+  border-bottom: 0.032rem solid#ECECF0;
+  background: #fff; }
+  .header .icon-back-h {
+    right: unset;
+    left: 1.25rem; }
+
+.header-search-wrap {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  width: 83.46667%;
+  height: 1.875rem;
+  margin: 0.65rem 0.75rem;
+  -webkit-border-radius: 0.9375rem;
+  border-radius: 0.9375rem;
+  background-color: #F3F3F6; }
+  .header-search-wrap .header-search-inp {
+    float: left;
+    width: 80%;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    color: #333443;
+    background-color: #F3F3F6;
+    letter-spacing: 0.0312rem;
+    text-indent: .3125rem;
+    border-radius: 0; }
+  .header-search-wrap .btn-wrap {
+    position: relative;
+    float: left;
+    width: 1.64rem;
+    height: 1.6rem;
+    padding: 1.4rem 1.35rem 0.4rem 0.65rem; }
+    .header-search-wrap .btn-wrap .icon-search {
+      right: unset;
+      left: 0.65rem; 
+      background-image: url(//js.ibaotu.com/mobile/img/icons/public/search_btn.png);
+      width: 1.1rem;
+      height: 1.1rem;}
+
+/* 搜索内容区 */
+
+.search-box {
+  width: 100%;
+  height: auto;
+  padding: 4.48rem .512rem 0 .46rem; }
+
+
+.search-hot .hot-list a {
+  float: left;
+    height: 1.98rem;
+    line-height: 1.68rem;
+    letter-spacing: 0.232rem;
+    padding: 0 0.84rem;
+    font-size: 0.968rem;
+    color: #333443;
+    margin-right: .512rem;
+    margin-bottom: .512rem;
+    border-radius: .02rem;
+    border: .064rem solid #C8C8D0; }
+
+/* 搜索分类导航 */
+.filter-cond {
+  position: fixed;
+  left: 0;
+  top: 3.4rem;
+  z-index: 99;
+  width: 100%;
+  height: 2.4rem;
+  background: #fff;
+  border-bottom: 0.2rem solid #ECECF0;}
+  .filter-cond > div {
+    float: left;
+    display: block;
+    width: 20%;
+    height: 100%;
+    line-height: 2.2rem;
+    color: #8D8D96;
+    font-size: 0.832rem;
+    text-align: center;
+    margin: 0 6.66667%; }
+    .filter-cond > div.active .top {
+      color: #FF9100; }
+      .filter-cond > div.active .top .icon-filter-angle {
+        background-image: url(//js.ibaotu.com/mobile/img/icons/public/icon_filter_angle2.png); }
+    .filter-cond > div.active .filter-wrap-bg {
+      display: block; }
+
+.filter-wrap-bg {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2.21rem;
+  z-index: 2;
+  width: 100%;
+  height: 2000%;
+  background: rgba(53, 53, 59, 0.5); }
+
+.filter-wrap {
+  overflow: hidden;
+  padding: 1.28rem 0.19rem 0.9rem 1.768rem;
+  background: #fff;
+  width: 100%;
+  /* margin-left: -1.5rem; */
+  /* margin-top: .1rem; */
+ }
+
+ .filter-wrap > li {
+    float: left;
+    margin: 0 0.812rem 0.812rem 0;
+    width: 6rem; }
+    .filter-wrap > li > a {
+      display: block;
+      padding: 0.512rem 0.65rem;
+      // line-height: 0.rem;
+      font-size: 0.768rem;
+      color: #333443;
+      -webkit-border-radius: 0.192rem;
+      border-radius: 0.192rem;
+      background: #F3F3F6; }
+      .filter-wrap > li > a.active {
+        background: #FF9100;
+        color: #fff; }
+ .filter-ban-wrap.active {
+    display: block; }
+    .filter-ban-wrap.active .filter-ban {
+      right: 0; }
+			
+div.active{
+  display: block;
+}
+
+div.background {
+  width:100%;
+  height:120%;
+}

@@ -1,0 +1,238 @@
+@import '@/qunar/reset.scss';
+
+.detailheader{
+  @include rect(100%, 0.45rem);
+  @include background-color(#fff);
+  @include position(relative);
+  .icon-icon{
+    @include position(absolute);
+    left:.2rem;
+    top:0.05rem;
+    @include color(#000);
+    @include font-size(.25rem);
+    }
+    h2{
+      @include white-space(nowrap);
+      @include color(#000);
+      @include font-size(.16rem);
+      @include font-weight(normal);
+      @include margin(0 auto);
+      @include text-align();
+      @include letter-spacing( .03rem);
+      @include rect(2.2rem,auto);
+      @include overflow(hidden);
+      @include white-space(nowrap);
+      @include text-overflow(ellipsis);
+      @include color(#4d4141cc);
+      @include margin-top(0.1rem);
+    }
+    .icon-weibiaoti-- {
+      @include position(absolute);
+      right:.5rem;
+      top:0.04rem;
+      @include font-size(.22rem);
+      @include color(#000);
+      @include font-weight(700);
+    }
+    .icon-zhuanfa{
+      @include position(absolute);
+      right:.15rem;
+      top:0.05rem;
+      @include font-size(.2rem);
+      @include color(#000);
+      @include font-weight(700);
+    }
+}
+.imgs-wrap{
+  @include position(relative);
+  @include background-color(#fff);
+  .imgs-yuanchuang{
+    background: url(//js.ibaotu.com/mobile/img/icons/detail/icon_origi.png) no-repeat;
+    @include background-size(1rem);
+    @include rect(1.84rem,1.9rem);
+    @include position(absolute);
+    top:0;
+    left:0;
+  }
+  img{
+    @include rect(100%,auto);
+  }
+}
+.pro-infos{
+  @include background-color(#fff);
+  .pro-tit{
+    @include rect(100%,auto);
+    @include color(#292A41);
+    @include letter-spacing(0.02rem);
+    @include margin-left(0.1rem);
+    p{
+      @include rect(86%,auto);
+      @include overflow(hidden);
+      @include white-space(nowrap);
+      @include text-overflow(ellipsis);
+      @include color(#000);
+      @include margin-top(0.1rem);
+      @include font-size(0.16rem);
+    }
+  }
+  .business-wrap{
+    @include rect(100%,0.4rem);
+    @include margin-top(0.1rem);
+    @include background-color(#fff);
+   border-bottom: 1px solid #ccc;
+    .icon-banquan{
+      background: url(//js.ibaotu.com/mobile/img/icons/public/icon_banquan.png) no-repeat;
+      @include background-size(0.15rem);
+      @include margin-left(0.1rem);
+      span{
+        @include margin-left(20px);
+        @include color(#8D8D96);
+        @include font-size(0.12rem);
+      }
+    }
+    .icon-business{
+      background: url(//js.ibaotu.com/mobile/img/icons/public/icon_business.png) no-repeat;
+      @include background-size(0.15rem);
+      @include margin-left(0.3rem);
+      span{
+        @include margin-left(0.2rem);
+        @include color(#8D8D96);
+        @include font-size(0.12rem);
+      }
+    }
+  }
+  .infos{
+    @include margin-top(0.1rem);
+    @include padding(0 0.1rem);
+    @include margin-bottom(0.3rem);
+    h6{
+      @include rect(100%,0.2rem);
+      @include color(#666);
+      @include font-size(0.15rem);
+      @include font-weight(normal);
+    }
+    .item{
+      @include rect(100%,0.15rem);
+      @include font-size(0.12rem);
+      @include color(#666);
+      @include margin-top(0.2rem);
+      div:first-child{
+        @include rect(56%,auto);
+        @include float(left);
+        span:first-child{
+          @include float(left);
+          @include rect(32%,auto);
+          @include color(#8D8D96);
+        }
+      }
+      div:nth-of-type(2){
+        @include rect(40%,auto);
+        @include float(left);
+        span:first-child{
+          @include float(left);
+          @include rect(40%,auto);
+          @include color(#8D8D96);
+        }
+      }
+    }
+  }
+}
+.relate-recom{
+  h6{
+    @include rect(100%,0.2rem);
+      @include color(#666);
+      @include font-size(0.15rem);
+      @include font-weight(normal);
+      @include margin-left(0.1rem);
+  }
+  .tjimg{
+    @include rect(100%,100%);
+    @include flexbox();
+    @include flex-wrap(wrap); //自动换行
+    @include margin-top(0.16rem);
+    .movieimg{
+      @include rect(auto, auto);
+      @include margin-left(0.18rem);
+      @include margin-bottom(0.22rem);
+    img{
+      @include rect(1rem,auto);
+    }
+    }
+  }
+}
+.float-right-up{
+  @include rect(0.8rem,0.8rem);
+  @include display(block);
+  @include position(fixed);
+  right: 0.1rem;
+  bottom:0.8rem;
+  background: url(//js.ibaotu.com/mobile/img/activity/190104/img_float_right2.gif) no-repeat;
+  @include background-size(cover);
+}
+
+.float-col{
+  .sec-float-left{
+    @include rect(32%,auto);
+    @include float(left);
+    @include padding(.1rem .2rem 0);
+    .navi-item{
+      @include rect(50%,100%);
+      @include display(block);
+      @include float(left);
+      @include color(#8D8D96);
+      @include font-size(0.1rem);
+      .navi_home{
+        @include rect(.36rem,0.2rem);
+        background: url(//js.ibaotu.com/mobile/img/icons/public/icon_homes.png) no-repeat;
+        @include background-size(0.18rem);
+        @include display(block);
+      }
+    }
+    .col-wraps{
+      @include rect(50%,100%);
+      @include display(block);
+      @include float(left);
+      @include color(#8D8D96);
+      @include font-size(0.1rem);
+      .icon-float-col{
+        @include rect(.36rem,0.2rem);
+        background: url(//js.ibaotu.com/mobile/img/icons/public/icon_col.png) no-repeat;
+        @include background-size(0.18rem);
+        @include display(block);
+      }
+      .icon-float-col-active{
+        @include rect(.36rem,0.2rem);
+        background: url(//js.ibaotu.com/mobile/img/icons/public/icon_col_no.png) no-repeat;
+        @include background-size(0.18rem);
+        @include display(block);
+      }
+    }
+  }
+  .sec-float-right{
+    @include rect(68%,100%);
+    @include float(left);
+    .ri-download{
+      @include float(left);
+      @include rect(50%,100%);
+      @include font-size(.15rem);
+      @include text-align(center);
+      @include letter-spacing(.02rem);
+      @include line-height(.55rem);
+      @include background-color(#FFA900);
+      @include color(#fff);
+      a{
+        @include color(#fff);
+      }
+    }
+    .ri-open{
+      background: linear-gradient(to right, #FF7500 0, #FF4800 100%);
+      @include rect(50%,100%);
+      @include float(left);
+      @include font-size(.15rem);
+      @include text-align(center);
+      @include letter-spacing(.02rem);
+      @include line-height(.55rem);
+      @include color(#fff);
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import '@/qunar/reset.scss';
+html, body, #root, .box {
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+}
+.header-flex {
+  margin-bottom: .2rem;
+  @include rect(100%, 0.44rem);
+   background: linear-gradient(to right, #FFAE12 0, #F07D17 100%);
+  position: fixed;
+  top:0;
+  z-index: 99;
+  @include color(#fff);
+  .backe {
+    @include color(#fff);
+    @include rect(.4rem, 100%);
+    font-size: .16rem;
+    float: left;
+    line-height: .44rem;
+    margin-left: .2rem;
+    img {
+      height: .2rem;
+    }
+  }
+  h3 {
+    font: 0.16rem/0.44rem  "";
+    font-size: .16rem;
+    letter-spacing: .01rem;
+    margin-left:1.2rem;
+    font-weight: 500;
+  }
+}
+.content {
+  .am-list-item img {
+    width: .14rem;
+    height: .22rem;
+    vertical-align: middle;
+}
+  span {
+    display: block;
+    @include rect(100%, .4rem);
+    font-size: .16rem;
+    line-height: .4rem;
+    text-align: center;
+  }
+  .times {
+    border-top: 1px solid #DDD;
+  }
+  .QQ {
+    @include rect(90%, .5rem);
+    margin-left: .2rem;
+    border-bottom: .01rem solid #DDD;
+    position: relative;
+    b {
+      position: absolute;
+      width: 1rem;
+      top: .4rem;
+      left: 32%;
+      font-size: .16rem;
+      font-weight: 500;
+      color: #333443;
+      background: #fff;
+      text-align: center;
+    }
+  }
+  p>a {
+    
+      display: block;
+    width: .55rem;
+    height: .55rem;
+    background: #13B7F6 url(//js.ibaotu.com/mobile/img/icons/login/img-qq-icon2.png)center no-repeat;
+    background-size: 50%;
+    border-radius: 100%;
+    margin: .4rem 1.5rem;    
+  }
+  p {
+    text-align: center;
+    font-size: .1rem;
+  }
+  s {
+    margin-top:.3rem;
+    display: block;
+    font-size: .1rem;
+    text-align: center;
+    color: #CFCFD6;
+  }
+}
